@@ -1,0 +1,15 @@
+update
+compile
+update
+exit
+compile
+exit
+update
+exit
+compile
+exit
+update
+compile
+fastOptJS
+exit
+compile
