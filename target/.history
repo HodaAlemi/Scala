@@ -13,3 +13,12 @@ compile
 fastOptJS
 exit
 compile
+clean
+fastOptJS
+compile
+fastOptJS
+clean
+fastOptJS
+exit
+fastOptJS
+exit
