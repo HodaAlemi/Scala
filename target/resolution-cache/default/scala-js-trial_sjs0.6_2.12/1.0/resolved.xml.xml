@@ -4,7 +4,7 @@
 		module="scala-js-trial_sjs0.6_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170317105331"
+		publication="20170324120956"
 	>
 		<description>
 		scala-js-trial
@@ -41,5 +41,6 @@
 		<dependency org="org.scala-js" name="scalajs-library_2.12" rev="0.6.14" conf="compile->default(compile)"/>
 		<dependency org="org.scala-js" name="scalajs-test-interface_2.12" rev="0.6.14" conf="test->default(compile)"/>
 		<dependency org="org.scala-js" name="scalajs-dom_sjs0.6_2.12" rev="0.9.1" conf="compile->default(compile)"/>
+		<dependency org="be.doeraene" name="scalajs-jquery_sjs0.6_2.12" rev="0.9.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
