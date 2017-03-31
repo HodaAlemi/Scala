@@ -1,22 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Scala.js application trial</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Encryption Utility</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><br>
+    <style>
+        div.container {
+        width: 100%;
+        border: 1px solid purple;
+        }
+
+        header, footer {
+            padding: 1em;
+            color: purple;
+            background-color: FloralWhite;
+            clear: left;
+            text-align: center;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            padding: px;
+        }
+        th {
+           border: 1px solid #dddddd;
+            text-align: center;
+        }
+
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Encryption Utility</h1>
+        </header>
 
-    <h1>Scala.js application trial</h1>
-    <button id="click-me-button" type="button" onclick="addClickedMessage()">
-        Click me!
-    </button>
-    <!-- Include Scala.js compiled code -->
-    <script type="text/javascript" src="./target/scala-2.12/scala-js-trial-fastopt.js"></script>
+        <!-- Include Scala.js compiled code -->
+        <script type="text/javascript" src="./target/scala-2.12/scala-js-trial-fastopt.js"></script>
 
-    <!-- Run core.main -->
-    <script type="text/javascript">
-      core().main();
-    </script>
+        <!-- Run core.main
+        <script type="text/javascript">
+          core().main();
+        </script> -->
 
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/2.1.1/jquery.js"></script>
+
+        <section>
+        <p>
+            <form>
+            <table cellspacing="0" >
+                <tr >
+                    <th colspan="2">Generate Curl</th>
+                </tr>
+
+                <tr >
+                    <td scope="row">Environment</td>
+                    <td>
+                        <input type="radio" name="env" value="TST" checked> TST<br>
+                        <input type="radio" name="env" value="ACC"> ACC<br>
+                        <input type="radio" name="env" value="PRD"> PRD<br>
+
+                    </td>
+                </tr>
+                <tr >
+                    <td scope="row">IBAN</td>
+                    <td>
+                        <select>
+                            <option value="cas">NL48INGB1234567</option>
+                            <option value="gtransation">NL50INGB1234567</option>
+                            <option value="gosapi">NL72INGB1234567</option>
+                        </select>
+
+                    </td>
+                </tr>
+
+                <tr >
+                    <th colspan="2" al="center"> <input type="submit" value="Curl"></th>
+                </tr>
+            </table>
+
+
+
+
+            </form>
+        </p>
+        </section>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!--<button id="curl-button" type="button" onclick="addClickedMessage()">-->
+            <!--Generate curl-->
+        <!--</button>-->
+        <footer>Copyright &copy; ING - Fast Data Chapter</footer>
+    </div>
 </body>
 </html>
